@@ -159,6 +159,19 @@ a {
         .movie-item {
             width: 22%;
         }
+        .poster-container {
+            display: block;
+        }
+        .movie-poster-image {
+            width: 95%
+          }
+        .movie-body {
+            margin: 0;
+            width: 95%
+          }
+          .back-button {
+            margin-bottom: 20px;
+         }
       }
     
     @media only screen and (max-width: 480px) {
