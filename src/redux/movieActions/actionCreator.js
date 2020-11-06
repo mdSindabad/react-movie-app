@@ -28,7 +28,7 @@ export const userRequest = (searchTitle='home') => {
             dispatch(fetchSuccess(response.data.results))
         })
         .catch(error => {
-            dispatch(fetchFailure(error))
+            dispatch(fetchFailure(error.message))
         })
 
     }
