@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #393b44;
+}
+
+h1 {
+    text-align: center;
+    color: #bfdcae;
+}
+
+.loading {
+    text-align: center;
+    color: #fff;
+}
+
+.search-form {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form button {
+    font-size: 17px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 2px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-form input {
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.movie-container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.movie-item {
+    width: 14%;
+    margin: 5px .5%;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.movie-item h4 {
+    margin: 0;
+    padding: 10px;
+    color: rgb(248, 248, 248);
+    transition: all 0.2s linear;
+}
+
+.movie-item img {
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+}
+
+.movie-item:hover img,
+.movie-item:hover h4
+{
+    color: #1aa6b7;
+    transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .movie-item {
+        width: 22%;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+    .movie-item {
+        width: 44%;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .movie-item {
+        width: 90%;
+    }
+  }
